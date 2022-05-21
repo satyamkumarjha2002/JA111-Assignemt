@@ -16,5 +16,6 @@ public class NetSalaryCalculation{
 		System.out.println("Enter Your P.F Percentage");
 		emp1.calculateNetSalary(input.nextDouble());
 		emp1.getEmployeeDetails();
+		input.close();
 	}
 }
