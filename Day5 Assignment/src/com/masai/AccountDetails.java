@@ -2,6 +2,8 @@ package com.masai;
 
 import java.util.Scanner;
 
+import javax.print.DocFlavor.INPUT_STREAM;
+
 public class AccountDetails {
 	Scanner input = new Scanner(System.in);
 	Account setUserDetails = new Account();
@@ -9,20 +11,19 @@ public class AccountDetails {
 	public Account getAccountDetails() {
 		System.out.println("Enter Account Id:-");
 		int accountId = input.nextInt();
-		System.out.println("Enter Deposite Amount:-");
-		int balance = input.nextInt();
-		if (balance > 0) {
-			int withdrawlAmount = getWithdrawAmount();
-			System.out.println("Enter Account Type:-");
-			String accounttype = input.next();
-			setUserDetails.set(accountId);
-			setUserDetails.set(accounttype);
-			setUserDetails.setBlance(balance);
-			setUserDetails.withdraw(withdrawlAmount);
-		} else {
-			System.out.println("Balance should be positive or greater than 0 Enter Again Acoount Details:-");
-			getAccountDetails();
+		int balance=-1;
+		while(balance<=0) {
+			System.out.println("Enter Balance:-");
+			balance = input.nextInt();
+			if(balance<=0)
+			System.out.println("Balance should be positive and non-zero");
 		}
+		int withdrawlAmount = getWithdrawAmount();
+		System.out.println("Enter Account Type:-");
+		String accounttype = input.next();
+		setUserDetails.set(accountId);
+		setUserDetails.set(accounttype);
+		setUserDetails.setBlance(balance);
 		return null;
 	}
 
@@ -36,6 +37,8 @@ public class AccountDetails {
 		// TODO Auto-generated method stub
 		AccountDetails user1 = new AccountDetails();
 		user1.getAccountDetails();
+		int withtdrw_amount = user1.getWithdrawAmount();
+		user1.setUserDetails.withdraw(withtdrw_amount);
 	}
 
 }
