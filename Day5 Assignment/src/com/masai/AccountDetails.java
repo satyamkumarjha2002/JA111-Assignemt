@@ -2,8 +2,6 @@ package com.masai;
 
 import java.util.Scanner;
 
-import javax.print.DocFlavor.INPUT_STREAM;
-
 public class AccountDetails {
 	Scanner input = new Scanner(System.in);
 	Account setUserDetails = new Account();
@@ -18,7 +16,6 @@ public class AccountDetails {
 			if(balance<=0)
 			System.out.println("Balance should be positive and non-zero");
 		}
-		int withdrawlAmount = getWithdrawAmount();
 		System.out.println("Enter Account Type:-");
 		String accounttype = input.next();
 		setUserDetails.set(accountId);
