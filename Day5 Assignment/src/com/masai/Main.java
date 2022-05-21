@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Ticket person1 = new Ticket();
 		Scanner input = new Scanner(System.in);
+		
 		System.out.println("Enter Ticket Id");
 		person1.SetId(input.nextInt());
 		System.out.println("Enter Price");
@@ -19,6 +20,7 @@ public class Main {
 		}else {
 			System.out.println("Only "+person1.getAvailableTickets()+" Left");
 		}
+		input.close();
 	}
-
+	
 }
