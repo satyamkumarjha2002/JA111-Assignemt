@@ -16,6 +16,8 @@ public class Main {
 		if (clc != -1) {
 			System.out.println("Total Price " + person1.get());
 			System.out.println("Available Ticket After Booking " + person1.getAvailableTickets());
+		}else {
+			System.out.println("Only "+person1.getAvailableTickets()+" Left");
 		}
 	}
 
