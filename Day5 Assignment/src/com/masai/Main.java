@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Ticket person1 = new Ticket();
 		Scanner input = new Scanner(System.in);
-		
+
 		System.out.println("Enter Ticket Id");
 		person1.SetId(input.nextInt());
 		System.out.println("Enter Price");
@@ -17,10 +17,10 @@ public class Main {
 		if (clc != -1) {
 			System.out.println("Total Price " + person1.get());
 			System.out.println("Available Ticket After Booking " + person1.getAvailableTickets());
-		}else {
-			System.out.println("Only "+person1.getAvailableTickets()+" Left");
+		} else {
+			System.out.println("Only " + person1.getAvailableTickets() + " Left");
 		}
 		input.close();
 	}
-	
+
 }
