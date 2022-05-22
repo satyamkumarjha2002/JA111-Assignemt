@@ -13,9 +13,9 @@ public class AccountDetails {
 		account.setAccountType(input.next());
 		System.out.println("Enter Balance - ");
 		int balance=input.nextInt();
-		if(balance<=0) {
-			System.out.println("Balance Should be positive -");
-			getAccountDetails();
+		while(balance<=0) {
+			System.out.println("Balance should be Positive Enter Again -");
+			balance=input.nextInt();
 		}
 		account.setBalance(balance);
 		return account;
@@ -24,11 +24,11 @@ public class AccountDetails {
 	   int withdrawAmount=0;
 	   System.out.println("Enter Amount to be Withdrawn - ");
 	   withdrawAmount=input.nextInt();
-	   if(withdrawAmount<=0) {
-		   System.out.println("Amount should be positive -");
-		   getWithdrawAmount();
+	   while(withdrawAmount<=0) {
+		   System.out.println("Amount Should be positive Enter Again -");
+		   withdrawAmount=input.nextInt();
 	   }
-	   return withdrawAmount;
+		   return withdrawAmount;
 	   
 	}
 	public static void main(String[] args) {
