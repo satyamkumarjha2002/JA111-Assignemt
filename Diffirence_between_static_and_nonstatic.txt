@@ -1,0 +1,53 @@
+Difference between Static and Non Staic Mebers in Java:-
+1.Static members load when then complingn start of program.
+but non-staic mebers load wehen then we create object and and call them;
+
+exp-
+public class Studens{
+
+int test=0;
+static int test2= 10;
+public void fun(a+b){
+return a+b;
+}
+static public void fun2(a+b){
+return a+b;
+} 
+ 
+static public void main(String[] args){
+System.out.println(test)//this will through an error becuse we want to ascess those members those are not loded in the program;
+System.out.println(test2)//this will not through any error because static member are load when program start compling;
+fun(1,2)//this will also through error because this is a non-staic member;
+fun2(1,2)//this will not through any error because this is static member;
+
+}
+}
+
+2.We create static member when any member are used in the program very extensively;
+We create non-static member when use of a member in program in less time;
+
+3. If we want to ascess static member we can direct ascess them by there name;
+but if we want to ascess non-static member we need to createe an object and by using those object then we can ascess them
+
+exp-
+
+public class Studens{
+
+int test=0;
+static int test2= 10;
+public void fun(a+b){
+return a+b;
+}
+static public void fun2(a+b){
+return a+b;
+} 
+ 
+static public void main(String[] args){
+Students obj=new Students();
+System.out.println(obj.test)//using object we can ascess non-static members;
+System.out.println(test2)
+obj.fun(1,2)//using object we can ascess non-static members;
+fun2(1,2)
+
+}
+}

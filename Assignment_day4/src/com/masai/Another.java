@@ -10,10 +10,10 @@ public class Another {
 		System.out.println("std1 marks-" + std1.marks);
 		System.out.println("std1- age" + std1.age);
 		System.out.println("Using pramitrized constructure");
-		System.out.println("std2 name-" + std1.name);
-		System.out.println("std2 roll-" + std1.roll);
-		System.out.println("std2 age-" + std1.marks);
-		System.out.println("std2 marks-" + std1.age);
+		System.out.println("std2 name-" + std2.name);
+		System.out.println("std2 roll-" + std2.roll);
+		System.out.println("std2 age-" + std2.marks);
+		System.out.println("std2 marks-" + std2.age);
 	}
 
 }
