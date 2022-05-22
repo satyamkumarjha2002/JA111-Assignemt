@@ -12,9 +12,9 @@ public class Students {
     		this.age=age;
     	}
     }
-int roll=5;
-String name="Shivam";
-int age=18;
-int marks=400;
+int roll;
+String name;
+int age;
+int marks;
 
 }
