@@ -1,11 +1,11 @@
 package com.masai;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class AccountDetails {
 	Scanner input = new Scanner(System.in);
 	public Account getAccountDetails() {
-		
 		Account account = new Account();
 		System.out.println("Enter Account Id - ");
 		account.setId(input.nextInt());

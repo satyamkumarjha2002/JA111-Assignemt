@@ -1,0 +1,21 @@
+String are imutable in Java because if we are mutate an string 
+in the java then its effect on the whole program;
+
+Difference between String and String Builder;
+1.
+Using String Keyword we can directly create a string;String str="Satyam"
+but if we want to create string using string builder 
+then we need to first createe an object of String class after that using those object we can 
+create string;
+String str = new String("Satyam");
+
+2. If you createe a String using String this will Store and maintain by Stringpool;
+and if you createe a String using Stirng builder it will Store in Heap;
+
+Method Of String;
+ String str="Satyam"
+ 1.str.length()=this will give length of str;
+ 2.str.charAt(0)=this will give chreacter at 0 place;
+ 3.str.reverse()=this will reverse the string;
+ 4.str.substringOf(int i)=this will give sub string staritn form i to last;
+ 4.str.substringOf(int i,int j)=this will give sub string staritn form i to j;
