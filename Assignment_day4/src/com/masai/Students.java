@@ -1,6 +1,11 @@
 package com.masai;
 
+
 public class Students {
+	private int roll;
+	private String name;
+	private int age;
+	private int marks;
 	Students() {
 
 	}
@@ -13,10 +18,30 @@ public class Students {
 			this.age = age;
 		}
 	}
-
-	int roll;
-	String name;
-	int age;
-	int marks;
+  public void setName(String name) {
+	  this.name=name;
+  }
+  public void setRoll(int roll) {
+	  this.roll=roll;
+  }
+  public void setAge(int age) {
+	  this.age=age;
+  }
+  public void setMarks(int marks) {
+	  this.marks=marks;
+  }
+  public String getName() {
+	  return this.name;
+  }
+  public int getRoll() {
+	  return this.roll;
+  }
+  public int getAge() {
+	  return this.age;
+  }
+  public int getMarks() {
+	  return this.marks;
+  }
+	
 
 }
