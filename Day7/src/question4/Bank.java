@@ -12,6 +12,11 @@ public class Bank {
 
 class AxisBank extends Bank{
 	double rateOfInterest=10.00;
+	 AxisBank() {
+			this.branchNameString="Axis Bank";
+			this.ifscCodeString="AXIS0001";
+			this.rateOfInterest=10.00;
+		}
 	@Override
 	void displayDetails() {
 		System.out.println("Branch Name : " + this.branchNameString);
@@ -24,7 +29,12 @@ class AxisBank extends Bank{
 }
 
 class ICICIBank extends Bank{
-	double rateOfInterest=8.00;
+	double rateOfInterest;
+	ICICIBank() {
+		this.branchNameString="ICII Bank";
+		this.ifscCodeString="ICICI000001";
+		this.rateOfInterest=8.0;
+	}
 	@Override
 	void displayDetails() {
 		System.out.println("Branch Name : " + this.branchNameString);
