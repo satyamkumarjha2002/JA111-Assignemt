@@ -23,6 +23,7 @@ public class VowelorConso {
 		fst_char.check_char('a');
 		fst_char.check_char('B');
 		fst_char.check_char('2');
+		
 	}
 
 }
