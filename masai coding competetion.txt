@@ -1,0 +1,9 @@
+ if(arr[i][0]=="E"&&arr[i][1]==1){
+           obj.A.push(arr[i][1]+" "+arr[i][2]);
+       }else if(arr[i][0]=="E"&&arr[i][1]==2){
+            obj.B.push(arr[i][1]+" "+arr[i][2]);
+       }else if(arr[i][0]=="E"&&arr[i][1]==3){
+            obj.C.push(arr[i][1]+" "+arr[i][2]);
+       }else if(arr[i][0]=="E"&&arr[i][1]==4){
+            obj.D.push(arr[i][1]+" "+arr[i][2]);
+       }
