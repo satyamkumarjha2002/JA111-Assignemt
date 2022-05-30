@@ -1,0 +1,30 @@
+1.we can achive is-A relation ship by inheritance;
+and has-A relationship by make class isnide the class or making a insatance variable of a
+a calss those we want to establish has-A relationship;
+
+example of has-A relationship-
+
+class person{
+class Address{
+String address;
+}
+String Name;
+}
+
+form above example we can say person has A address not person is A address;
+
+example of is-A realationship-
+
+class Bird{
+public void speek(){
+  sysout("bird can speek");
+}
+}
+
+class Parrot extend Bird{
+public void speek(){
+  sysout("parrot can speek like human");//overriding of methid of parrent class
+}
+}
+
+from above example we can say parrot is A bird we can not say parrot has A bird;
