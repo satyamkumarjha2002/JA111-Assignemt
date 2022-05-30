@@ -1,0 +1,6 @@
+************* Difference between this and super *****************;
+1.this keyword point his own calass method and instance variables while
+super denote his parrent class costructer;
+
+2. Using super we can invoke imidiate parent calss construcutre or method or instance variable
+but using this keyword we can only ascess instance variaable and method of same call;

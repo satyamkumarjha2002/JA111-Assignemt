@@ -1,6 +1,10 @@
 package question4;
 
 public class Bank {
+	Bank(String branchNameString,String ifscCodeString){
+		this.branchNameString=branchNameString;
+		this.ifscCodeString=ifscCodeString;
+	}
 	String branchNameString;
 	String ifscCodeString;
 
@@ -13,8 +17,7 @@ public class Bank {
 class AxisBank extends Bank{
 	double rateOfInterest;
 	 AxisBank(String branchName,double intrestrate,String ifscCode) {
-			this.branchNameString=branchName;
-			this.ifscCodeString=ifscCode;
+		     super(branchName,ifscCode);
 			this.rateOfInterest=intrestrate;
 		}
 	@Override
@@ -32,8 +35,7 @@ class AxisBank extends Bank{
 class ICICIBank extends Bank{
 	double rateOfInterest;
 	ICICIBank(String branchName,double intrestrate,String ifscCode) {
-		this.branchNameString=branchName;
-		this.ifscCodeString=ifscCode;
+		super(branchName,ifscCode);
 		this.rateOfInterest=intrestrate;
 	}
 	@Override
