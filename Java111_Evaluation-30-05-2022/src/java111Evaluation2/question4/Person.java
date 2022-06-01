@@ -2,10 +2,7 @@ package java111Evaluation2.question4;
 
 public class Person {
 
-	@Override
-	public String toString() {
-		return "Person [address=" + address + "]";
-	}
+	
 
 	class Address {
 		
@@ -28,5 +25,9 @@ public class Person {
 
 	String name;
 	String gender;
+	@Override
+	public String toString() {
+		return "Person [address=" + address + "]";
+	}
 	Address address;
 }
