@@ -1,17 +1,59 @@
 package practicceEnum;
 
 public enum Day {
-	SUN(7), MON(8), TUE(19), WED(82), THUR(98), FRID(90), SATUR(87);
-	private int vale;
-	private  Day(int vale) {
-		this.vale=vale;
+	SUN {
+		@Override
+		public void info() {
+			System.out.println("This is Sunday");
+		}
+	},
+	MON {
+		@Override
+		public void info() {
+			System.out.println("This is Monday");
+		}
+	},
+	TUE {
+		@Override
+		public void info() {
+			System.out.println("This is Tuesday");
+		}
+	},
+	WED {
+		@Override
+		public void info() {
+			System.out.println("This is Wednesday");
+		}
+	},
+	THUR {
+		@Override
+		public void info() {
+			System.out.println("This is Thrusday");
+		}
+	},
+	FRID {
+		@Override
+		public void info() {
+			System.out.println("This is Friday");
+		}
+	},
+	SATUR {
+		@Override
+		public void info() {
+			System.out.println("This is Saturday");
+		}
+	};
+
+	public void info() {
+		System.out.println("Days Name");
 	}
-	
+
 	public static void main(String[] args) {
-		Day[] day= Day.values();
-		System.out.println(Day.FRID.vale);
-		for(Day d: day) {
-			System.out.println(d.vale);
+		Day day1=Day.FRID;
+		day1.info();
+		Day[] day = Day.values();
+		for (Day d : day) {
+			d.info();
 		}
 	}
 }
